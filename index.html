@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluation Pratique </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Formulaire de création d'un compte -->
+        <form class="form" id="createAccount">
+            <h1 class="form-title">Create an Account</h1>
+
+            <!-- Champ "Nom" -->
+            <div class="nom">
+                <label for="Nom">Nom</label>
+                <input type="text" id="Nom" required >
+            </div>
+
+            <!-- Champ "Prénom" -->
+            <div class="prenom">
+                <label for="Prenom">Prénom</label>
+                <input type="text" id="Prenom" required >
+            </div>
+
+            <!-- Champ "Prénom 2" (éviter les duplications) -->
+            <div class="prenom2">
+                <label for="Prenom2">Prénom 2</label> <!-- ID et label corrigé -->
+                <input type="text" id="Prenom2" required >
+            </div>
+
+            <!-- Bouton Suivant -->
+            <div class="button-suivant">
+                <button type="submit">Suivant</button>
+            </div>
+        </form>
+
+        <!-- Formulaire 2 : continueCreateAccount (initialement caché) -->
+        <form id="continueCreateAccount" class="hidden">
+            <h2>Continue Account Creation</h2>
+
+            <!-- Champ "Mot de passe" -->
+            <div class="mot-de-passe">
+                <label for="Mot-de-passe">Mot de passe</label>
+                <input type="password" id="Mot-de-passe" required >
+            </div>
+            <!-- Champ "Confirmer mot de passe" -->
+            <div class="confirmer-mot-de-passe">
+                <label for="confirmer-Mot-de-passe">Confirmer le mot de passe</label>
+                <input type="password" id="confirmer-Mot-de-passe" required >
+            </div>
+            <!-- Bouton Confirmer -->
+            <div class="confirmer">
+                <button type="submit">Confirmer</button>
+            </div>
+
+            <!-- Bouton Retour (cacher ou afficher les formulaires en JavaScript) -->
+            <div class="retour">
+                <button type="button" id="btnRetour">Retour</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

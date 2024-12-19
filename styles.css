@@ -1,0 +1,113 @@
+/*Réinitialisation globale des styles*/
+* {
+  margin: 0; /* Enlever toutes les marges exterieures par defaut */
+  padding: 0; /*Enlève les paddings internes par défaut*/
+  box-sizing: border-box; /* Inclut padding et border dans la largeur et la hauteur des éléments */
+  font-family: Arial, sans-serif; /*la police utilisée*/
+}
+/*centrer le contenu de la page verticalement et horizontalement*/
+body {
+  display: flex; /*facilite l'alignement et la repartition de l'espace entre les elements */
+  align-items: center; /* Centre les elements enfant du body verticalement =>  formulaire sera centree sur l'ecran*/
+  justify-content: center; /*Centre les elements enfants horizontalement*/
+  justify-items: center;
+  height: 100vh; /* 1% de la hauteur =>body occupera toute la hauteur de l'écran.*/
+  background: #d7d7d7; /*couleur de fond*/
+}
+/*l'élément conteneur principal du formulaire.*/
+.container {
+  position: relative;
+  width: 380px;
+  height: 480px;
+  background: #ffffff;
+  overflow: hidden; /* Masquer tout débordement */
+  padding: 2rem;
+  margin: 2rem;
+  border-radius: 2%;
+}
+
+h2 {
+  font-size: 25px;
+}
+
+form .corp-form .group {
+  display: flex;
+  flex-direction: column; /* Empiler les éléments verticalement */
+  margin-top: 30px;/* Espacement entre chaque groupe */
+  position: relative;
+  font-size: 15px;
+}
+
+form .corp-form .group input {
+  margin-top: 10px;
+  padding: 10px 10px 10px 30px;
+  border: 1px solid #c9c9c9;
+  outline-color: #747cdf;
+}
+form .pied-form-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+form .pied-form-btn .btn-suivant {
+  padding: 10px 25px;
+  background-color: #1c73ed;
+  color: white;
+  font-size: 15px;
+  border-radius: 3px; /* Coins légèrement arrondis */
+  border: none; /* Suppression de la bordure par défaut */
+  text-align: center; /* Centrer le texte dans le bouton */
+}
+
+form .pied-form-btn2 {
+  display: flex; /* Flexbox pour aligner les boutons */
+  margin-top: 80px;
+  justify-content: space-between;
+}
+form .pied-form-btn2 .confirmer .btn-confirmer {
+  padding: 10px 25px;
+  background-color: #1c73ed;
+  color: white;
+  font-size: 15px;
+  border-radius: 3px;
+  border: none;
+  text-align: center;
+}
+form .pied-form-btn2 .retour .btn-retour {
+  padding: 10px 25px;
+  background-color: #1c73ed;
+  color: white;
+  font-size: 15px;
+  border-radius: 3px;
+  border: none;
+  text-align: center;
+}
+
+/* Container pour le champ mot de passe et l'icône */
+.password-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.password-container input {
+  width: 100%;
+  padding-right: 40px; /* Laisser de l'espace pour l'icône */
+}
+
+.password-container .fa {
+  position: absolute;
+  right: 10px;
+  font-size: 16px; /* Taille de l'icône */
+  color: #747cdf;
+  cursor: pointer;
+}
+
+.password-container .fa:hover {
+  color: #5a5bb0;  /* Couleur plus foncée pour le survol */
+}
+
+.error-message{
+  color: red;
+  font-size: 10px;
+}

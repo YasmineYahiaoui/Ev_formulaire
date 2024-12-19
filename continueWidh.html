@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>continue Create Account</title>
+    <link rel="stylesheet" href="styles.css" >
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  </head>
+  <body>
+    <div class="container">
+      <!-- Formulaire 2 : continueCreateAccount -->
+      <form>
+        <h2>continue widh.</h2>
+        <div class="separation"></div>
+        <div class="corp-form">
+          <!-- Champ "Mot de passe" -->
+          <div class="group">
+            <label for="Mot-de-passe">Mot de passe :</label>
+            <div class="password-container">
+              <input type="password" id="Mot-de-passe">
+              <i
+                class="fa fa-eye"
+                id="toggleMotDePasse"
+                onclick="togglePasswordVisibility('Mot-de-passe', 'toggleMotDePasse')"
+              ></i>
+            </div>
+            <div id="motDePasseError" class="error-message" ></div>
+          </div>
+          <!-- Champ "Confirmer mot de passe" -->
+          <div class="group">
+            <label for="confirmer-Mot-de-passe">Confirmer le mot de passe :</label>
+            <div class="password-container">
+              <input type="password" id="confirmer-Mot-de-passe">
+              <i
+                class="fa fa-eye"
+                id="toggleConfirmerMotDePasse"
+                onclick="togglePasswordVisibility('confirmer-Mot-de-passe', 'toggleConfirmerMotDePasse')"
+              ></i>
+            </div>
+            <div id="confirmerMotDePasseError" class="error-message" ></div>
+          </div>
+        </div>
+        <!-- pied de formulaire -->
+        <div class="pied-form-btn2">
+          <!-- Bouton Retour -->
+          <div class="retour">
+            <button
+              type="button"
+              id="btnRetour"
+              onclick="window.location.href='createAnAccount.html'"
+              class="btn-retour"
+            >
+              Retour
+            </button>
+          </div>
+          <!-- Bouton Confirmer -->
+          <div class="confirmer">
+            <button type="submit" class="btn-confirmer">Confirmer</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

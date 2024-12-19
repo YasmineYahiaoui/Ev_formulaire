@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Create an Account</title>
+    <link rel="stylesheet" href="styles.css" >
+  </head>
+  <body>
+    <div class="container">
+      <!-- Formulaire de création d'un compte -->
+      <form>
+        <h2>create an account</h2>
+        <div class="separation"></div>
+        <div class="corp-form">
+          <!-- Champ "Nom" -->
+          <div class="group">
+            <label for="Nom">Nom :</label>
+            <input type="text" id="Nom">
+            <div id="nomError" class="error-message" ></div>
+          </div>
+          <!-- Champ "Prénom" -->
+          <div class="group">
+            <label for="Prenom">Prenom :</label>
+            <input type="text" id="Prenom">
+            <div id="prenomError" class="error-message" ></div>
+          </div>
+
+          <!-- Champ "Deuxième Prénom" -->
+          <div class="group">
+            <label for="Prenom2">Prenom :</label>
+            <input type="text" id="Prenom2">
+            <div id="prenom2Error" class="error-message" ></div>
+          </div>
+        </div>
+        <!-- pied de formulaire -->
+        <!-- Bouton Suivant -->
+        <div class="pied-form-btn">
+          <button type="submit" class="btn-suivant">Suivant</button>
+        </div>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
